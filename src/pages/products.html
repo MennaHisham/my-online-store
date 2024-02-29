@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Website - Products</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwindcss -->
+    <link rel="stylesheet" href="../../dist/css/tailwind.css" />
+  </head>
+  <body class="font-roboto">
+    <!-- BEGIN::header -->
+    <div class="max-w-6xl mx-auto px-4 py-6 flex items-center justify-between">
+      <!-- left side -->
+      <p class="capitalize text-sm font-medium">my online store</p>
+      <!-- right side -->
+      <div class="flex items-center gap-4">
+        <!-- wishlist -->
+        <a href="#" class="flex items-center gap-1">
+          <img src="../../dist/img/heart.svg" />
+          <span class="text-sm font-medium">3</span>
+        </a>
+        <!-- bag -->
+        <a href="./cart.html" class="flex items-center gap-1">
+          <img src="../../dist/img/bag.svg" />
+          <span class="text-sm font-medium">2</span>
+        </a>
+      </div>
+    </div>
+    <!-- END::header -->
+    <!-- BEGIN::breadcrumb -->
+    <div class="bg-black">
+      <ul class="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-3">
+        <li>
+          <a href="#" class="text-sm font-medium text-white capitalize">home</a>
+        </li>
+        <li><span class="text-sm font-medium text-white">/</span></li>
+        <li>
+          <a
+            href="./products.html"
+            class="text-sm font-medium text-white capitalize"
+            >shoes</a
+          >
+        </li>
+      </ul>
+    </div>
+    <!-- END::breadcrumb -->
+    <!-- BEGIN::hero -->
+    <div class="max-w-6xl mx-auto px-4 py-16">
+      <p class="capitalize font-bold text-4xl text-center">
+        We are one click away
+      </p>
+      <p class="text-center leading-7 mt-4 max-w-md mx-auto">
+        Shop your favorite collection of everything! Find goods with affordable
+        prices in the quality you love.
+      </p>
+    </div>
+    <!-- END::hero -->
+    <!-- BEGIN::bordered wrapper -->
+    <div class="border-t border-neutral-300">
+      <!-- BEGIN::products wrapper -->
+      <div class="max-w-6xl mx-auto overflow-x-hidden sm:px-4">
+        <!-- BEGIN::products grid -->
+        <div
+          class="border-l border-neutral-300 grid grid-cols-2 -mx-px sm:mx-0 md:grid-cols-3"
+        >
+          <!-- BEGIN::single product -->
+          <div
+            class="px-4 pt-4 pb-6 border-r border-b border-neutral-300 sm:px-6 sm:pt-6 sm:pb-8 md:px-8 md:pt-8 md:pb-10"
+          >
+            <!-- BEGIN::product image -->
+            <div class="relative">
+              <button
+                class="w-9 h-9 rounded-full bg-white flex justify-center items-center absolute top-2.5 right-2.5"
+              >
+                <img src="../../dist/img/heart.svg" />
+              </button>
+              <a href="#"
+                ><img src="../../dist/img/shoes-1.jpeg" class="rounded-sm"
+              /></a>
+            </div>
+            <!-- END::product image -->
+            <!-- BEGIN::product info -->
+            <div class="mt-7">
+              <!-- BEGIN::badge -->
+              <span
+                class="uppercase text-xs font-medium text-green-700 bg-green-100 py-0.5 px-2 rounded-sm inline-block mb-2.5"
+                >new</span
+              >
+              <!-- END::badge -->
+              <!-- BEGIN::product name -->
+              <a href="#" class="block capitalize font-medium"
+                >Men’s casual shoe</a
+              >
+              <!-- END::product name -->
+              <!-- BEGIN::product price -->
+              <p class="font-medium mt-2.5">$50</p>
+              <!-- END::product price -->
+              <!-- BEGIN::product colors -->
+              <div class="mt-2.5 flex gap-4">
+                <a
+                  href="#"
+                  class="w-5 h-5 rounded-full bg-white border border-neutral-300"
+                ></a>
+                <a
+                  href="#"
+                  class="w-5 h-5 rounded-full bg-red-500 border border-neutral-300"
+                ></a>
+                <a
+                  href="#"
+                  class="w-5 h-5 rounded-full bg-black border border-neutral-300"
+                ></a>
+              </div>
+              <!-- END::product colors -->
+            </div>
+            <!-- END::product info -->
+          </div>
+          <!-- END::single product -->
+          <!-- BEGIN::single product -->
+          <div
+            class="px-4 pt-4 pb-6 sm:px-6 sm:pt-6 sm:pb-8 md:px-8 md:pt-8 md:pb-10 border-neutral-300 border-r border-b"
+          >
+            <!-- BEGIN::product image -->
+            <div class="relative">
+              <button
+                class="w-9 h-9 rounded-full bg-white flex justify-center items-center absolute top-2.5 right-2.5"
+              >
+                <img src="../../dist/img/heart.svg" />
+              </button>
+              <a href="#"
+                ><img src="../../dist/img/shoes-2.jpeg" class="rounded-sm"
+              /></a>
+            </div>
+            <!-- END::product image -->
+            <!-- BEGIN::product info -->
+            <div class="mt-7">
+              <!-- BEGIN::product name -->
+              <a href="#" class="block capitalize font-medium"
+                >Women’s court shoe</a
+              >
+              <!-- END::product name -->
+              <!-- BEGIN::product price -->
+              <p class="font-medium mt-2.5">$70</p>
+              <!-- END::product price -->
+            </div>
+            <!-- END::product info -->
+          </div>
+          <!-- END::single product -->
+          <!-- BEGIN::single product -->
+          <div
+            class="px-4 pt-4 pb-6 sm:px-6 sm:pt-6 sm:pb-8 md:px-8 md:pt-8 md:pb-10 border-neutral-300 border-r border-b"
+          >
+            <!-- BEGIN::product image -->
+            <div class="relative">
+              <button
+                class="w-9 h-9 rounded-full bg-white flex justify-center items-center absolute top-2.5 right-2.5"
+              >
+                <img src="../../dist/img/heart.svg" />
+              </button>
+              <a href="#"
+                ><img src="../../dist/img/shoes-4.jpeg" class="rounded-sm"
+              /></a>
+            </div>
+            <!-- END::product image -->
+            <!-- BEGIN::product info -->
+            <div class="mt-7">
+              <!-- BEGIN::badge -->
+              <span
+                class="uppercase text-xs font-medium text-green-700 bg-green-100 py-0.5 px-2 rounded-sm inline-block mb-2.5"
+                >new</span
+              >
+              <!-- END::badge -->
+              <!-- BEGIN::product name -->
+              <a href="#" class="block capitalize font-medium"
+                >Men’s Sport Shoe</a
+              >
+              <!-- END::product name -->
+              <!-- BEGIN::product price -->
+              <p class="font-medium mt-2.5">$100</p>
+              <!-- END::product price -->
+              <!-- BEGIN::product colors -->
+              <div class="mt-2.5 flex gap-4">
+                <a
+                  href="#"
+                  class="w-5 h-5 rounded-full bg-white border border-neutral-300"
+                ></a>
+                <a
+                  href="#"
+                  class="w-5 h-5 rounded-full bg-black border border-neutral-300"
+                ></a>
+              </div>
+              <!-- END::product colors -->
+            </div>
+            <!-- END::product info -->
+          </div>
+          <!-- END::single product -->
+          <!-- BEGIN::single product -->
+          <div
+            class="px-4 pt-4 pb-6 sm:px-6 sm:pt-6 sm:pb-8 md:px-8 md:pt-8 md:pb-10 border-neutral-300 border-r border-b"
+          >
+            <!-- BEGIN::product image -->
+            <div class="relative">
+              <button
+                class="w-9 h-9 rounded-full bg-white flex justify-center items-center absolute top-2.5 right-2.5"
+              >
+                <img src="../../dist/img/heart.svg" />
+              </button>
+              <a href="./product-view.html"
+                ><img src="../../dist/img/shoes-3.jpeg" class="rounded-sm"
+              /></a>
+            </div>
+            <!-- END::product image -->
+            <!-- BEGIN::product info -->
+            <div class="mt-7">
+              <!-- BEGIN::product name -->
+              <a href="./product-view.html" class="block capitalize font-medium"
+                >Unisex Running Shoe</a
+              >
+              <!-- END::product name -->
+              <!-- BEGIN::product price -->
+              <p class="font-medium mt-2.5">$55</p>
+              <!-- END::product price -->
+              <!-- BEGIN::product colors -->
+              <div class="mt-2.5 flex gap-4">
+                <a
+                  href="#"
+                  class="w-5 h-5 rounded-full bg-white border border-neutral-300"
+                ></a>
+                <a
+                  href="#"
+                  class="w-5 h-5 rounded-full bg-fuchsia-300 border border-neutral-300"
+                ></a>
+                <a
+                  href="#"
+                  class="w-5 h-5 rounded-full bg-black border border-neutral-300"
+                ></a>
+                <a
+                  href="#"
+                  class="w-5 h-5 rounded-full bg-blue-400 border border-neutral-300"
+                ></a>
+              </div>
+              <!-- END::product colors -->
+            </div>
+            <!-- END::product info -->
+          </div>
+          <!-- END::single product -->
+          <!-- BEGIN::single product -->
+          <div
+            class="px-4 pt-4 pb-6 sm:px-6 sm:pt-6 sm:pb-8 md:px-8 md:pt-8 md:pb-10 border-neutral-300 border-r border-b"
+          >
+            <!-- BEGIN::product image -->
+            <div class="relative">
+              <button
+                class="w-9 h-9 rounded-full bg-white flex justify-center items-center absolute top-2.5 right-2.5"
+              >
+                <img src="../../dist/img/heart.svg" />
+              </button>
+              <a href="#"
+                ><img src="../../dist/img/shoes-1.jpeg" class="rounded-sm"
+              /></a>
+            </div>
+            <!-- END::product image -->
+            <!-- BEGIN::product info -->
+            <div class="mt-7">
+              <!-- BEGIN::badge -->
+              <span
+                class="uppercase text-xs font-medium text-green-700 bg-green-100 py-0.5 px-2 rounded-sm inline-block mb-2.5"
+                >new</span
+              >
+              <!-- END::badge -->
+              <!-- BEGIN::product name -->
+              <a href="#" class="block capitalize font-medium"
+                >Men’s casual shoe</a
+              >
+              <!-- END::product name -->
+              <!-- BEGIN::product price -->
+              <p class="font-medium mt-2.5">$50</p>
+              <!-- END::product price -->
+              <!-- BEGIN::product colors -->
+              <div class="mt-2.5 flex gap-4">
+                <a
+                  href="#"
+                  class="w-5 h-5 rounded-full bg-white border border-neutral-300"
+                ></a>
+                <a
+                  href="#"
+                  class="w-5 h-5 rounded-full bg-red-500 border border-neutral-300"
+                ></a>
+                <a
+                  href="#"
+                  class="w-5 h-5 rounded-full bg-black border border-neutral-300"
+                ></a>
+              </div>
+              <!-- END::product colors -->
+            </div>
+            <!-- END::product info -->
+          </div>
+          <!-- END::single product -->
+          <!-- BEGIN::single product -->
+          <div
+            class="px-4 pt-4 pb-6 sm:px-6 sm:pt-6 sm:pb-8 md:px-8 md:pt-8 md:pb-10 border-neutral-300 border-r border-b"
+          >
+            <!-- BEGIN::product image -->
+            <div class="relative">
+              <button
+                class="w-9 h-9 rounded-full bg-white flex justify-center items-center absolute top-2.5 right-2.5"
+              >
+                <img src="../../dist/img/heart.svg" />
+              </button>
+              <a href="#"
+                ><img src="../../dist/img/shoes-2.jpeg" class="rounded-sm"
+              /></a>
+            </div>
+            <!-- END::product image -->
+            <!-- BEGIN::product info -->
+            <div class="mt-7">
+              <!-- BEGIN::product name -->
+              <a href="#" class="block capitalize font-medium"
+                >Women’s court shoe</a
+              >
+              <!-- END::product name -->
+              <!-- BEGIN::product price -->
+              <p class="font-medium mt-2.5">$70</p>
+              <!-- END::product price -->
+            </div>
+            <!-- END::product info -->
+          </div>
+          <!-- END::single product -->
+          <!-- BEGIN::single product -->
+          <div
+            class="px-4 pt-4 pb-6 sm:px-6 sm:pt-6 sm:pb-8 md:px-8 md:pt-8 md:pb-10 border-neutral-300 border-r border-b"
+          >
+            <!-- BEGIN::product image -->
+            <div class="relative">
+              <button
+                class="w-9 h-9 rounded-full bg-white flex justify-center items-center absolute top-2.5 right-2.5"
+              >
+                <img src="../../dist/img/heart.svg" />
+              </button>
+              <a href="#"
+                ><img src="../../dist/img/shoes-4.jpeg" class="rounded-sm"
+              /></a>
+            </div>
+            <!-- END::product image -->
+            <!-- BEGIN::product info -->
+            <div class="mt-7">
+              <!-- BEGIN::badge -->
+              <span
+                class="uppercase text-xs font-medium text-green-700 bg-green-100 py-0.5 px-2 rounded-sm inline-block mb-2.5"
+                >new</span
+              >
+              <!-- END::badge -->
+              <!-- BEGIN::product name -->
+              <a href="#" class="block capitalize font-medium"
+                >Men’s Sport Shoe</a
+              >
+              <!-- END::product name -->
+              <!-- BEGIN::product price -->
+              <p class="font-medium mt-2.5">$100</p>
+              <!-- END::product price -->
+              <!-- BEGIN::product colors -->
+              <div class="mt-2.5 flex gap-4">
+                <a
+                  href="#"
+                  class="w-5 h-5 rounded-full bg-white border border-neutral-300"
+                ></a>
+                <a
+                  href="#"
+                  class="w-5 h-5 rounded-full bg-black border border-neutral-300"
+                ></a>
+              </div>
+              <!-- END::product colors -->
+            </div>
+            <!-- END::product info -->
+          </div>
+          <!-- END::single product -->
+          <!-- BEGIN::single product -->
+          <div
+            class="px-4 pt-4 pb-6 sm:px-6 sm:pt-6 sm:pb-8 md:px-8 md:pt-8 md:pb-10 border-neutral-300 border-r border-b"
+          >
+            <!-- BEGIN::product image -->
+            <div class="relative">
+              <button
+                class="w-9 h-9 rounded-full bg-white flex justify-center items-center absolute top-2.5 right-2.5"
+              >
+                <img src="../../dist/img/heart.svg" />
+              </button>
+              <a href="#"
+                ><img src="../../dist/img/shoes-3.jpeg" class="rounded-sm"
+              /></a>
+            </div>
+            <!-- END::product image -->
+            <!-- BEGIN::product info -->
+            <div class="mt-7">
+              <!-- BEGIN::product name -->
+              <a href="#" class="block capitalize font-medium"
+                >Unisex Running Shoe</a
+              >
+              <!-- END::product name -->
+              <!-- BEGIN::product price -->
+              <p class="font-medium mt-2.5">$55</p>
+              <!-- END::product price -->
+              <!-- BEGIN::product colors -->
+              <div class="mt-2.5 flex gap-4">
+                <a
+                  href="#"
+                  class="w-5 h-5 rounded-full bg-white border border-neutral-300"
+                ></a>
+                <a
+                  href="#"
+                  class="w-5 h-5 rounded-full bg-fuchsia-300 border border-neutral-300"
+                ></a>
+                <a
+                  href="#"
+                  class="w-5 h-5 rounded-full bg-black border border-neutral-300"
+                ></a>
+                <a
+                  href="#"
+                  class="w-5 h-5 rounded-full bg-blue-400 border border-neutral-300"
+                ></a>
+              </div>
+              <!-- END::product colors -->
+            </div>
+            <!-- END::product info -->
+          </div>
+          <!-- END::single product -->
+          <!-- BEGIN::single product -->
+          <div
+            class="px-4 pt-4 pb-6 sm:px-6 sm:pt-6 sm:pb-8 md:px-8 md:pt-8 md:pb-10 border-neutral-300 border-r border-b"
+          >
+            <!-- BEGIN::product image -->
+            <div class="relative">
+              <button
+                class="w-9 h-9 rounded-full bg-white flex justify-center items-center absolute top-2.5 right-2.5"
+              >
+                <img src="../../dist/img/heart.svg" />
+              </button>
+              <a href="#"
+                ><img src="../../dist/img/shoes-1.jpeg" class="rounded-sm"
+              /></a>
+            </div>
+            <!-- END::product image -->
+            <!-- BEGIN::product info -->
+            <div class="mt-7">
+              <!-- BEGIN::badge -->
+              <span
+                class="uppercase text-xs font-medium text-green-700 bg-green-100 py-0.5 px-2 rounded-sm inline-block mb-2.5"
+                >new</span
+              >
+              <!-- END::badge -->
+              <!-- BEGIN::product name -->
+              <a href="#" class="block capitalize font-medium"
+                >Men’s casual shoe</a
+              >
+              <!-- END::product name -->
+              <!-- BEGIN::product price -->
+              <p class="font-medium mt-2.5">$50</p>
+              <!-- END::product price -->
+              <!-- BEGIN::product colors -->
+              <div class="mt-2.5 flex gap-4">
+                <a
+                  href="#"
+                  class="w-5 h-5 rounded-full bg-white border border-neutral-300"
+                ></a>
+                <a
+                  href="#"
+                  class="w-5 h-5 rounded-full bg-red-500 border border-neutral-300"
+                ></a>
+                <a
+                  href="#"
+                  class="w-5 h-5 rounded-full bg-black border border-neutral-300"
+                ></a>
+              </div>
+              <!-- END::product colors -->
+            </div>
+            <!-- END::product info -->
+          </div>
+          <!-- END::single product -->
+        </div>
+        <!-- END::products grid -->
+      </div>
+      <!-- END::products wrapper -->
+    </div>
+    <!-- END::bordered wrapper -->
+    <!-- BEGIN::bordered wrapper -->
+    <div class="border-t border-neutral-300 -mt-px">
+      <!-- BEGIN::footer -->
+      <div class="max-w-6xl mx-auto px-4 py-5 flex items-center gap-1">
+        <img src="../../dist/img/copyright.svg" />
+        <p class="capitalize text-sm">2023 My Online Store.</p>
+      </div>
+      <!-- END::footer -->
+    </div>
+    <!-- END::bordered wrapper -->
+  </body>
+</html>
