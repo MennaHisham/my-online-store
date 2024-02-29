@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Website - Product View</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwindcss -->
+    <link rel="stylesheet" href="../../dist/css/tailwind.css" />
+  </head>
+  <body class="font-roboto">
+    <!-- BEGIN::header -->
+    <div class="max-w-6xl mx-auto px-4 py-6 flex items-center justify-between">
+      <!-- left side -->
+      <p class="capitalize text-sm font-medium">my online store</p>
+      <!-- right side -->
+      <div class="flex items-center gap-4">
+        <!-- wishlist -->
+        <a href="#" class="flex items-center gap-1">
+          <img src="../../dist/img/heart.svg" />
+          <span class="text-sm font-medium">3</span>
+        </a>
+        <!-- bag -->
+        <a href="./cart.html" class="flex items-center gap-1">
+          <img src="../../dist/img/bag.svg" />
+          <span class="text-sm font-medium">2</span>
+        </a>
+      </div>
+    </div>
+    <!-- END::header -->
+    <!-- BEGIN::breadcrumb -->
+    <div class="bg-black">
+      <ul class="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-3">
+        <li>
+          <a href="#" class="text-sm font-medium text-white capitalize">home</a>
+        </li>
+        <li><span class="text-sm font-medium text-white">/</span></li>
+        <li>
+          <a
+            href="./products.html"
+            class="text-sm font-medium text-white capitalize"
+            >shoes</a
+          >
+        </li>
+        <li><span class="text-sm font-medium text-white">/</span></li>
+        <li>
+          <a
+            href="./product-view.html"
+            class="text-sm font-medium text-white capitalize"
+            >Unisex Running Shoe</a
+          >
+        </li>
+      </ul>
+    </div>
+    <!-- END::breadcrumb -->
+    <!-- BEGIN::content wrapper -->
+    <div class="max-w-6xl mx-auto px-4 mt-9">
+      <!-- BEGIN::product gallery & info wrapper -->
+      <div class="md:grid md:grid-cols-2 md:gap-8">
+        <!-- BEGIN::product gallery -->
+        <div class="sm:flex sm:justify-between sm:gap-2.5 md:items-start">
+          <div class="hidden sm:flex sm:flex-col sm:gap-2.5 sm:shrink-0">
+            <img
+              src="../../dist/img/shoes-3.jpeg"
+              class="rounded-sm border-2 border-black w-20 hover:cursor-pointer hover:border-2 hover:border-black"
+            />
+            <img
+              src="../../dist/img/shoes-3.jpeg"
+              class="rounded-sm w-20 hover:cursor-pointer hover:border-2 hover:border-black"
+            />
+            <img
+              src="../../dist/img/shoes-3.jpeg"
+              class="rounded-sm w-20 hover:cursor-pointer hover:border-2 hover:border-black"
+            />
+            <img
+              src="../../dist/img/shoes-3.jpeg"
+              class="rounded-sm w-20 hover:cursor-pointer hover:border-2 hover:border-black"
+            />
+          </div>
+          <img
+            src="../../dist/img/shoes-3.jpeg"
+            class="rounded-sm sm:overflow-hidden"
+          />
+          <!-- BEGIN::dots -->
+          <div class="flex justify-center gap-1 mt-4 sm:hidden">
+            <div class="w-2.5 h-2.5 rounded-full bg-neutral-300"></div>
+            <div class="w-2.5 h-2.5 rounded-full bg-neutral-300"></div>
+            <div class="w-2.5 h-2.5 rounded-full bg-neutral-300"></div>
+            <div class="w-2.5 h-2.5 rounded-full bg-black"></div>
+          </div>
+          <!-- END::dots -->
+        </div>
+        <!-- END::product gallery -->
+        <!-- BEGIN::info -->
+        <div class="mt-4 md:mt-0">
+          <!-- BEGIN::product name & share -->
+          <div class="flex items-center justify-between">
+            <p class="capitalize font-medium">Unisex Running Shoe</p>
+            <button>
+              <img src="../../dist/img/share-network.svg" />
+            </button>
+          </div>
+          <!-- END::product name & share -->
+          <!-- BEGIN::product price -->
+          <p class="font-medium text-3xl mt-4">$50</p>
+          <!-- END::product price -->
+          <!-- BEGIN::current color -->
+          <p class="mt-4">Color: Black</p>
+          <!-- END::current color -->
+          <!-- BEGIN::product colors -->
+          <div class="mt-2 flex gap-4">
+            <a
+              href="#"
+              class="w-5 h-5 rounded-full bg-white border border-neutral-300"
+            ></a>
+            <a
+              href="#"
+              class="w-5 h-5 rounded-full bg-fuchsia-300 border border-neutral-300"
+            ></a>
+            <a
+              href="#"
+              class="w-5 h-5 rounded-full bg-black border-2 border-white outline outline-2 outline-black"
+            ></a>
+            <a
+              href="#"
+              class="w-5 h-5 rounded-full bg-blue-400 border border-neutral-300"
+            ></a>
+          </div>
+          <!-- END::product colors -->
+          <!-- BEGIN::size -->
+          <p class="mt-4">Size</p>
+          <div
+            class="mt-2 flex items-center justify-between border border-black rounded-sm py-2 px-3.5"
+          >
+            <p>Select size</p>
+            <img src="../../dist/img/arrow-down.svg" />
+          </div>
+          <!-- END::size -->
+          <!-- BEGIN::shipment & delivery -->
+          <div class="mt-4">
+            <!-- BEGIN::shipment -->
+            <div class="flex items-center gap-1">
+              <img src="../../dist/img/location-pin.svg" />
+              <p>Ship to <span class="underline">Jeddah</span></p>
+            </div>
+            <!-- END::shipment -->
+            <!-- BEGIN::delivery -->
+            <p class="mt-2">
+              Delivery by: <span class="text-green-700">10 December 2023</span>
+            </p>
+            <!-- END::delivery -->
+          </div>
+          <!-- END::shipment & delivery -->
+          <!-- BEGIN::CTA -->
+          <div class="flex items-center gap-4 mt-8">
+            <button
+              class="bg-black text-white uppercase font-bold py-4 rounded-sm grow"
+            >
+              add to bag
+            </button>
+            <button><img src="../../dist/img/heart.svg" class="w-9" /></button>
+          </div>
+          <!-- END::CTA -->
+          <!-- BEGIN::features wrapper -->
+          <div class="mt-12 flex justify-center gap-4 lg:gap-14">
+            <!-- BEGIN::feature -->
+            <div class="flex flex-col items-center gap-1.5">
+              <div class="border border-black rounded-full p-2.5">
+                <img src="../../dist/img/shield-tick.svg" />
+              </div>
+              <p>100% Genuine</p>
+            </div>
+            <!-- END::feature -->
+            <!-- BEGIN::feature -->
+            <div class="flex flex-col items-center gap-1.5">
+              <div class="border border-black rounded-full p-2.5">
+                <img src="../../dist/img/shipping-fast.svg" />
+              </div>
+              <p>Free shipping</p>
+            </div>
+            <!-- END::feature -->
+            <!-- BEGIN::feature -->
+            <div class="flex flex-col items-center gap-1.5">
+              <div class="border border-black rounded-full p-2.5">
+                <img src="../../dist/img/arrow-arc-left.svg" />
+              </div>
+              <p>14 days return</p>
+            </div>
+            <!-- END::feature -->
+          </div>
+          <!-- END::features wrapper -->
+          <!-- BEGIN::description -->
+          <div class="mt-12">
+            <h1 class="font-medium border-b border-neutral-300 pb-2">
+              Description
+            </h1>
+            <p class="mt-4">
+              Lorem ipsum dolor sit amet consectetur. Augue imperdiet faucibus
+              nulla feugiat sit. Aliquet quam nibh fringilla suspendisse nunc in
+              duis nam et. A fermentum non semper gravida tincidunt nunc et
+              nulla vel. Vitae dignissim id felis id dignissim cum sed.
+            </p>
+          </div>
+          <!-- END::description -->
+        </div>
+        <!-- END::info -->
+      </div>
+      <!-- END::product gallery & info wrapper -->
+      <!-- BEGIN::similar products -->
+      <div class="my-14">
+        <!-- BEGIN::header -->
+        <div class="flex items-center justify-between">
+          <p class="text-xl font-medium capitalize">You May Also Like</p>
+          <a href="#" class="flex items-center gap-1.5">
+            <span class="text-sm font-medium">View All</span>
+            <img src="../../dist/img/arrow-right.svg" />
+          </a>
+        </div>
+        <!-- END::header -->
+        <!-- BEGIN::products grid -->
+        <div class="mt-6 grid grid-cols-2 gap-6 md:grid-cols-4">
+          <!-- BEGIN::single product -->
+          <div>
+            <!-- BEGIN::product image -->
+            <a href="#"
+              ><img src="../../dist/img/shoes-1.jpeg" class="rounded-sm"
+            /></a>
+            <!-- END::product image -->
+            <!-- BEGIN::product info -->
+            <div class="mt-7">
+              <!-- BEGIN::product name -->
+              <a href="#" class="capitalize font-medium">Men’s casual shoe</a>
+              <!-- END::product name -->
+              <!-- BEGIN::product price -->
+              <p class="font-medium mt-2.5">$50</p>
+              <!-- END::product price -->
+            </div>
+            <!-- END::product info -->
+          </div>
+          <!-- END::single product -->
+          <!-- BEGIN::single product -->
+          <div>
+            <!-- BEGIN::product image -->
+            <a href="#"
+              ><img src="../../dist/img/shoes-2.jpeg" class="rounded-sm"
+            /></a>
+            <!-- END::product image -->
+            <!-- BEGIN::product info -->
+            <div class="mt-7">
+              <!-- BEGIN::product name -->
+              <a href="#" class="capitalize font-medium">Women’s court shoe</a>
+              <!-- END::product name -->
+              <!-- BEGIN::product price -->
+              <p class="font-medium mt-2.5">$70</p>
+              <!-- END::product price -->
+            </div>
+            <!-- END::product info -->
+          </div>
+          <!-- END::single product -->
+          <!-- BEGIN::single product -->
+          <div>
+            <!-- BEGIN::product image -->
+            <a href="#"
+              ><img src="../../dist/img/shoes-4.jpeg" class="rounded-sm"
+            /></a>
+            <!-- END::product image -->
+            <!-- BEGIN::product info -->
+            <div class="mt-7">
+              <!-- BEGIN::product name -->
+              <a href="#" class="capitalize font-medium">Men’s Sport Shoe</a>
+              <!-- END::product name -->
+              <!-- BEGIN::product price -->
+              <p class="font-medium mt-2.5">$100</p>
+              <!-- END::product price -->
+            </div>
+            <!-- END::product info -->
+          </div>
+          <!-- END::single product -->
+          <!-- BEGIN::single product -->
+          <div>
+            <!-- BEGIN::product image -->
+            <a href="#"
+              ><img src="../../dist/img/shoes-3.jpeg" class="rounded-sm"
+            /></a>
+            <!-- END::product image -->
+            <!-- BEGIN::product info -->
+            <div class="mt-7">
+              <!-- BEGIN::product name -->
+              <a href="#" class="capitalize font-medium">Unisex Running Shoe</a>
+              <!-- END::product name -->
+              <!-- BEGIN::product price -->
+              <p class="font-medium mt-2.5">$55</p>
+              <!-- END::product price -->
+            </div>
+            <!-- END::product info -->
+          </div>
+          <!-- END::single product -->
+        </div>
+        <!-- END::products grid -->
+      </div>
+      <!-- END::similar products -->
+    </div>
+    <!-- END::content wrapper -->
+    <!-- BEGIN::bordered wrapper -->
+    <div class="border-t border-neutral-300">
+      <!-- BEGIN::footer -->
+      <div class="max-w-6xl mx-auto px-4 py-5 flex items-center gap-1">
+        <img src="../../dist/img/copyright.svg" />
+        <p class="capitalize text-sm">2023 My Online Store.</p>
+      </div>
+      <!-- END::footer -->
+    </div>
+    <!-- END::bordered wrapper -->
+  </body>
+</html>
